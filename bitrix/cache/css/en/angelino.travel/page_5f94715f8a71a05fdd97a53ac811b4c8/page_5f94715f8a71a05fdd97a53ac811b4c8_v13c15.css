@@ -1,0 +1,463 @@
+/* Start:/local/templates/angelino.travel/assets/css/tours-list.css?1772441887385*/
+.tours-list {
+    margin: 40px 0
+}
+
+.tours-list__swiper {
+    margin: 0 -10px;
+    padding: 10px
+}
+
+.tours-list__wrap {
+    grid-gap: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+@media (max-width:767px) {
+    .tours-list__wrap {
+        align-items: center
+    }
+}
+
+@media (max-width:991px) {
+    .tours-list__wrap.swiper-wrapper {
+        grid-gap: 0;
+        gap: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        padding: 10px 0 30px
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/tl-card.css?17724418874364*/
+.tl-card,
+.tl-card.swiper-slide {
+    border-radius: 10px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+    min-height: 392px;
+    overflow: hidden;
+    padding: 29px 35px 30px 28px;
+    position: relative;
+    text-decoration: none;
+    width: 100%
+}
+
+@media (max-width:991px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        max-width: calc(50% - 20px)
+    }
+}
+
+@media (max-width:640px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        max-width: 100%
+    }
+}
+
+.tl-card.hidden,
+.tl-card.swiper-slide.hidden {
+    display: none
+}
+
+.tl-card.swiper-slide.tl-card--short,
+.tl-card.tl-card--short {
+    justify-content: flex-end;
+    min-height: 230px;
+    min-width: 400px
+}
+
+.tl-card.swiper-slide.tl-card--short .tl-card__img,
+.tl-card.tl-card--short .tl-card__img {
+    height: 100%
+}
+
+@media (max-width:991px) {
+
+    .tl-card.swiper-slide.tl-card--short,
+    .tl-card.tl-card--short {
+        margin: 0 auto;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        min-width: 100%
+    }
+}
+
+@media (max-width:380px) {
+
+    .tl-card.swiper-slide.tl-card--short,
+    .tl-card.tl-card--short {
+        min-width: 0
+    }
+}
+
+@media (max-width:991px) {
+
+    .tl-card.swiper-slide,
+    .tl-card.swiper-slide.swiper-slide {
+        max-width: none
+    }
+}
+
+.tl-card.swiper-slide:hover .button-t,
+.tl-card:hover .button-t {
+    background-color: var(--color-background)
+}
+
+.tl-card.swiper-slide:hover .button-t span,
+.tl-card:hover .button-t span {
+    color: var(--color-text-base)
+}
+
+.tl-card.swiper-slide:hover .tl-card__img,
+.tl-card:hover .tl-card__img {
+    transform: scale(1.1)
+}
+
+@media (max-width:479px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        min-height: 384px;
+        padding: 20px 15px
+    }
+}
+
+.tl-card .tl-card__img,
+.tl-card.swiper-slide .tl-card__img {
+    display: flex;
+    height: 392px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform .3s;
+    width: 100%
+}
+
+.tl-card .tl-card__img picture,
+.tl-card.swiper-slide .tl-card__img picture {
+    width: 100%
+}
+
+.tl-card .tl-card__img img,
+.tl-card.swiper-slide .tl-card__img img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.tl-card .tl-card__title,
+.tl-card.swiper-slide .tl-card__title {
+    color: var(--color-background);
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.tl-card .tl-card__days,
+.tl-card.swiper-slide .tl-card__days {
+    grid-gap: 8px;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-background);
+    display: flex;
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+    font-size: 1.7rem;
+    line-height: 1
+}
+
+.tl-card .tl-card__bottom,
+.tl-card .tl-card__head,
+.tl-card.swiper-slide .tl-card__bottom,
+.tl-card.swiper-slide .tl-card__head {
+    position: relative
+}
+
+.tl-card .tl-card__bottom,
+.tl-card.swiper-slide .tl-card__bottom {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center
+}
+
+.tl-card .tl-card__price,
+.tl-card .tl-card__text,
+.tl-card.swiper-slide .tl-card__price,
+.tl-card.swiper-slide .tl-card__text {
+    color: var(--color-background);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.2
+}
+
+@media (max-width:400px) {
+
+    .tl-card .tl-card__price,
+    .tl-card .tl-card__text,
+    .tl-card.swiper-slide .tl-card__price,
+    .tl-card.swiper-slide .tl-card__text {
+        font-size: 1.5rem
+    }
+}
+
+.tl-card .tl-card__text--medium,
+.tl-card.swiper-slide .tl-card__text--medium {
+    font-weight: 500
+}
+
+.tl-card .tl-card__price,
+.tl-card.swiper-slide .tl-card__price {
+    font-size: 2.7rem
+}
+
+@media (max-width:400px) {
+
+    .tl-card .tl-card__price,
+    .tl-card.swiper-slide .tl-card__price {
+        font-size: 2.2rem
+    }
+}
+
+.tl-card .tl-card__left .button-l,
+.tl-card.swiper-slide .tl-card__left .button-l {
+    min-width: 130px
+}
+
+.tl-card .tl-card__right .button-t,
+.tl-card.swiper-slide .tl-card__right .button-t {
+    min-width: 130px;
+    transition: background-color .3s
+}
+
+.tl-card .tl-card__right .button-t:hover,
+.tl-card.swiper-slide .tl-card__right .button-t:hover {
+    background: var(--color-background);
+    border-color: hsla(0, 0%, 100%, .7)
+}
+
+.tl-card .tl-card__body,
+.tl-card.swiper-slide .tl-card__body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+    text-align: center
+}
+
+.tl-card .tl-card__category,
+.tl-card.swiper-slide .tl-card__category {
+    color: var(--color-background);
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1
+}
+
+.tl-card .tl-card__count,
+.tl-card.swiper-slide .tl-card__count {
+    color: var(--color-background);
+    font-weight: 500
+}
+
+.tl-card .tl-card__btn,
+.tl-card.swiper-slide .tl-card__btn {
+    bottom: 10px;
+    min-width: 130px;
+    position: absolute
+}
+
+.tl-card .tl-card__btn .button-t,
+.tl-card.swiper-slide .tl-card__btn .button-t {
+    width: 100%
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957*/
+.slider-pagination.swiper-pagination {
+    grid-gap: 5px;
+    gap: 5px;
+    bottom: 0 !important;
+    display: none;
+    justify-content: center
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet {
+    background-color: #d9d9d9;
+    height: 6px;
+    margin: 0 !important;
+    opacity: 1;
+    width: 6px
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-text-second)
+}
+
+.slider-arrow.swiper-button-next,
+.slider-arrow.swiper-button-prev {
+    right: 23px;
+    top: 47%
+}
+
+@media (max-width:991px) {
+
+    .slider-arrow.swiper-button-next,
+    .slider-arrow.swiper-button-prev {
+        display: none !important
+    }
+}
+
+.slider-arrow.swiper-button-next:after,
+.slider-arrow.swiper-button-prev:after {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/arrow-slider.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 16px;
+    width: 11px
+}
+
+.slider-arrow.swiper-button-prev {
+    left: 23px;
+    right: auto
+}
+
+.slider-arrow.swiper-button-prev:after {
+    transform: rotate(180deg)
+}
+
+.swiper-initialized .slider-pagination {
+    display: flex
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/instagram-block.css?17724418871310*/
+.instagram-block {
+    margin: 50px 0
+}
+
+.instagram-block__wrap {
+    margin: 0 auto;
+    max-width: 760px
+}
+
+.instagram-block--small {
+    border: none;
+    padding: 0
+}
+
+.instagram-block--small .instagram-block__inner {
+    grid-gap: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.instagram-block--small .instagram-block__btn {
+    padding: 10px
+}
+
+.instagram-block--small .instagram-block__btn img,
+.instagram-block--small .instagram-block__btn svg {
+    height: 16px;
+    width: 16px
+}
+
+.instagram-block--small .instagram-block__bottom {
+    margin-top: 15px
+}
+
+.instagram-block__title {
+    margin-bottom: 30px
+}
+
+@media (max-width:767px) {
+    .instagram-block__title {
+        margin-bottom: 16px
+    }
+}
+
+.instagram-block__inner {
+    grid-gap: 24px;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+@media (max-width:767px) {
+    .instagram-block__inner {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:539px) {
+    .instagram-block__inner {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+.instagram-block__item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s
+}
+
+@media (max-width:767px) {
+    .instagram-block__item:nth-child(1n+4) {
+        display: none
+    }
+}
+
+@media (max-width:539px) {
+    .instagram-block__item:nth-child(1n+4) {
+        display: none
+    }
+}
+
+.instagram-block__item:hover {
+    transform: scale(1.03)
+}
+
+.instagram-block__item img {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 100%
+}
+
+.instagram-block__bottom {
+    margin-top: 41px;
+    text-align: center
+}
+
+/* End */
+/* /local/templates/angelino.travel/assets/css/tours-list.css?1772441887385 */
+/* /local/templates/angelino.travel/assets/css/tl-card.css?17724418874364 */
+/* /local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957 */
+/* /local/templates/angelino.travel/assets/css/instagram-block.css?17724418871310 */

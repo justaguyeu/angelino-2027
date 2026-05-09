@@ -1,0 +1,1023 @@
+/* Start:/local/templates/angelino.travel/assets/css/intro.css?17724418874563*/
+.intro {
+    background-color: #666;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 560px;
+    position: relative
+}
+
+@media (min-width:2000px) {
+    .intro {
+        height: 800px
+    }
+}
+
+@media (max-width:767px) {
+    .intro {
+        height: auto;
+        min-height: 560px
+    }
+}
+
+.intro.intro--mobile {
+    background-color: #fff;
+    height: auto
+}
+
+.intro.intro--mobile .intro__title {
+    color: #000;
+    margin: 0
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__title {
+        color: #fff;
+        font-size: 3rem;
+        margin: 40px 0 20px
+    }
+}
+
+.intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:after {
+    background-color: #c1c1c1
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:after {
+        background-color: var(--color-background)
+    }
+}
+
+.intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:last-child .breadcrumbs__link {
+    color: #757575;
+    text-decoration: none
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:last-child .breadcrumbs__link {
+        text-underline-offset: 5px;
+        color: var(--color-background);
+        text-decoration: 1px dashed underline
+    }
+
+    .intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:last-child .breadcrumbs__link:hover {
+        color: var(--color-background)
+    }
+}
+
+.intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item .breadcrumbs__link {
+    color: #c1c1c1
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item .breadcrumbs__link {
+        color: var(--color-background)
+    }
+}
+
+.intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item .breadcrumbs__link:hover {
+    color: #757575
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__breadcrumbs .breadcrumbs .breadcrumbs__item .breadcrumbs__link:hover {
+        color: var(--main-color-first)
+    }
+}
+
+.intro.intro--mobile .intro__subtitle {
+    display: none
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__subtitle {
+        display: block
+    }
+}
+
+.intro.intro--mobile .intro__bg {
+    display: none
+}
+
+@media (max-width:767px) {
+    .intro.intro--mobile .intro__bg {
+        display: block
+    }
+}
+
+.intro.intro--mobile .intro__container {
+    height: auto;
+    padding: 27px 15px 20px
+}
+
+.intro .intro__bg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.intro .intro__bg img {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.intro .intro__video-bg {
+    background-color: rgba(0, 0, 0, .25);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+
+.intro .intro__video-bg .intro__bg {
+    display: none
+}
+
+@media (max-width:767px) {
+    .intro .intro__video-bg {
+        background-color: transparent
+    }
+
+    .intro .intro__video-bg .intro__bg {
+        display: block
+    }
+}
+
+.intro .intro__video {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    width: 100%
+}
+
+@media (max-width:767px) {
+    .intro .intro__video {
+        display: none
+    }
+}
+
+.intro .intro__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 70px 15px 90px;
+    position: relative;
+    z-index: 10
+}
+
+.intro .intro__breadcrumbs .breadcrumbs {
+    padding-top: 0
+}
+
+.intro .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:after {
+    background-color: var(--color-background)
+}
+
+.intro .intro__breadcrumbs .breadcrumbs .breadcrumbs__item:last-child .breadcrumbs__link {
+    text-underline-offset: 5px;
+    text-decoration: 1px dashed underline
+}
+
+.intro .intro__breadcrumbs .breadcrumbs .breadcrumbs__link {
+    color: var(--color-background)
+}
+
+.intro .intro__breadcrumbs .breadcrumbs .breadcrumbs__link:hover {
+    color: var(--main-color-first)
+}
+
+.intro .intro__top {
+    color: var(--color-background);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 2rem;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 109px;
+    text-align: center
+}
+
+.intro .intro__title {
+    color: var(--color-background);
+    padding: 0
+}
+
+.intro .intro__subtitle {
+    color: var(--color-background);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 2.8rem;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    text-align: center
+}
+
+.intro .intro__btn {
+    margin-top: 40px;
+    text-align: center
+}
+
+.intro .intro__hint {
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: -7px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .1);
+    color: var(--color-text-second);
+    font-size: 1.3rem;
+    left: 50%;
+    line-height: 1;
+    padding: 12.5px 16px;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 20
+}
+
+.intro--text-position .intro__container {
+    justify-content: flex-start
+}
+
+.intro--text-position .intro__container .breadcrumbs {
+    margin-bottom: 0
+}
+
+.intro--text-position .intro__container .intro__title {
+    margin-top: 40px
+}
+
+@media (max-width:767px) {
+    .intro--text-position .intro__container .intro__title {
+        font-size: 3rem
+    }
+}
+
+.intro--text-vertical .intro__container {
+    justify-content: center
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/subintro.css?1772441887745*/
+.subintro.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -63px;
+    position: relative;
+    z-index: 10
+}
+
+@media (max-width:991px) {
+    .subintro.container {
+        flex-direction: column;
+        margin-top: -26px
+    }
+}
+
+.subintro.container .subintro__socials,
+.subintro.container .subintro__tourism {
+    position: absolute;
+    right: 15px
+}
+
+@media (max-width:991px) {
+
+    .subintro.container .subintro__socials,
+    .subintro.container .subintro__tourism {
+        margin-top: 20px;
+        position: static
+    }
+}
+
+.subintro.container .subintro__tourism {
+    background-color: var(--color-background);
+    left: 0;
+    padding: 2.5px 16px;
+    right: auto
+}
+
+@media (max-width:991px) {
+    .subintro.container .subintro__tourism {
+        margin-bottom: 15px;
+        margin-top: 0
+    }
+}
+
+.subintro.container .subintro__tourism-link img {
+    display: block
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/tripadvisor-pin.css?1772441887447*/
+.tripadvisor-pin {
+    color: var(--color-text-base);
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none
+}
+
+.tripadvisor-pin__img {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 114px;
+    justify-content: center;
+    margin: 0 auto -4px;
+    overflow: hidden;
+    width: 114px
+}
+
+.tripadvisor-pin__img img {
+    height: 81px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 87px
+}
+
+.tripadvisor-pin__text {
+    text-decoration: underline
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/img-holder.css?17724418871503*/
+.img-holders__container {
+    grid-gap: 9px;
+    gap: 9px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 36px auto 30px
+}
+
+@media (max-width:767px) {
+    .img-holders__container {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+.img-holders__container .img-holder {
+    margin: 0
+}
+
+.img-holder {
+    margin: 30px auto;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.img-holder:first-child {
+    margin-top: 0
+}
+
+.img-holder:last-of-type {
+    margin-bottom: 0
+}
+
+.img-holder--half {
+    display: block;
+    margin: 0 0 20px;
+    width: calc(50% - 4px)
+}
+
+@media (max-width:539px) {
+    .img-holder--half {
+        width: 100%
+    }
+}
+
+.img-holder--half .img-holder__img {
+    border-radius: 15px
+}
+
+.img-holder--desc {
+    align-items: center
+}
+
+.img-holder--revert {
+    flex-direction: row-reverse
+}
+
+.img-holder__img {
+    border-right: 10px;
+    color: #393939;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none
+}
+
+.img-holder__img:after {
+    background-color: var(--color-background);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s;
+    width: 100%
+}
+
+.img-holder__img img {
+    border-radius: 15px;
+    display: block;
+    transition: opacity .3s;
+    width: 100%
+}
+
+.img-holder__img:hover:after {
+    opacity: .2
+}
+
+.img-holder__outline {
+    background: none;
+    color: var(--color-text-third);
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+    font-style: italic;
+    line-height: 1.7;
+    margin-top: 10px
+}
+
+.img-holder__outline:empty {
+    display: none
+}
+
+.img-holder__outline a {
+    color: var(--color-text-third);
+    text-decoration: underline
+}
+
+.img-holder__outline a:hover {
+    text-decoration: none
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/wrapper-slider.css?17724418872234*/
+.wrapper-slider {
+    margin: 30px 0
+}
+
+.wrapper-slider .wrapper-slider__content {
+    grid-gap: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.wrapper-slider .wrapper-slider__content .detail-card {
+    width: calc(32% - 20px)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__content .detail-card {
+        width: calc(50% - 16px)
+    }
+}
+
+@media (max-width:640px) {
+    .wrapper-slider .wrapper-slider__content .detail-card {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider .wrapper-slider__content {
+        grid-gap: 16px;
+        gap: 16px
+    }
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper {
+    margin: 0 -10px;
+    padding: 0 10px 10px
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper .detail-card {
+    width: 100%
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__inner.swiper {
+        padding-bottom: 30px
+    }
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper .wrapper-slider__content {
+    grid-gap: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__inner.swiper .wrapper-slider__content {
+        grid-gap: 0;
+        gap: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: normal
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content {
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content {
+        grid-gap: 0;
+        gap: 0
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+    min-height: 217px
+}
+
+@media (max-width:1200px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+        min-height: 151px
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+        min-height: auto
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+    min-height: 240px
+}
+
+@media (max-width:1200px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+        min-height: 261px
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+        min-height: auto
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957*/
+.slider-pagination.swiper-pagination {
+    grid-gap: 5px;
+    gap: 5px;
+    bottom: 0 !important;
+    display: none;
+    justify-content: center
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet {
+    background-color: #d9d9d9;
+    height: 6px;
+    margin: 0 !important;
+    opacity: 1;
+    width: 6px
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-text-second)
+}
+
+.slider-arrow.swiper-button-next,
+.slider-arrow.swiper-button-prev {
+    right: 23px;
+    top: 47%
+}
+
+@media (max-width:991px) {
+
+    .slider-arrow.swiper-button-next,
+    .slider-arrow.swiper-button-prev {
+        display: none !important
+    }
+}
+
+.slider-arrow.swiper-button-next:after,
+.slider-arrow.swiper-button-prev:after {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/arrow-slider.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 16px;
+    width: 11px
+}
+
+.slider-arrow.swiper-button-prev {
+    left: 23px;
+    right: auto
+}
+
+.slider-arrow.swiper-button-prev:after {
+    transform: rotate(180deg)
+}
+
+.swiper-initialized .slider-pagination {
+    display: flex
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/accordion-list.css?17724418874148*/
+.accordion-list {
+    margin: 60px 0
+}
+
+.accordion-list:last-child {
+    margin-bottom: 0
+}
+
+.accordion-list .accordion-list__wrap {
+    grid-gap: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px
+}
+
+.accordion-list .accordion-list__wrap:last-child {
+    margin-bottom: 0
+}
+
+.accordion-list .accordion-list__title {
+    grid-gap: 0;
+    gap: 0;
+    align-items: center;
+    color: var(--color-text-base);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+    padding: 0;
+    text-align: left
+}
+
+.accordion-list .accordion-list__title:before {
+    content: none
+}
+
+.accordion-list .accordion-list__title img {
+    height: 33px;
+    margin-right: 15px;
+    width: 33px
+}
+
+.accordion-list .accordion-item {
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05)
+}
+
+.accordion-list .accordion-item.show {
+    overflow: visible;
+    padding-bottom: 12px
+}
+
+.accordion-list .accordion-item.show .accordion-item__icon svg path {
+    fill: var(--main-color-first)
+}
+
+.accordion-list .accordion-item.show .accordion-item__head:before {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/al-arrow-g.svg);
+    transform: rotate(180deg) translateY(43%)
+}
+
+.accordion-list .accordion-item--static .accordion-item__body {
+    display: block;
+    padding-top: 16px
+}
+
+.accordion-list .accordion-item__head {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    transition: background-color .3s
+}
+
+@media (max-width:991px) {
+    .accordion-list .accordion-item__head {
+        padding: 15px 45px 15px 15px
+    }
+}
+
+.accordion-list .accordion-item__head:before {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/al-arrow.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 14px;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .3s;
+    width: 14px
+}
+
+.accordion-list .accordion-item__head:hover {
+    background-color: #9B782C
+}
+
+.accordion-list .accordion-item__head:hover:before {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/al-arrow-g.svg)
+}
+
+.accordion-list .accordion-item__head span {
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: color .3s
+}
+
+.accordion-list .accordion-item__icon {
+    flex-shrink: 0;
+    height: 20px;
+    margin-right: 13px;
+    width: 20px
+}
+
+.accordion-list .accordion-item__icon img,
+.accordion-list .accordion-item__icon svg {
+    height: 100%;
+    width: 100%
+}
+
+.accordion-list .accordion-item__icon svg path {
+    transition: fill .3s
+}
+
+.accordion-list .accordion-item__body {
+    height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: height .3s, padding .3s
+}
+
+.accordion-list .accordion-item__body h1,
+.accordion-list .accordion-item__body h2,
+.accordion-list .accordion-item__body h3,
+.accordion-list .accordion-item__body h4,
+.accordion-list .accordion-item__body ol,
+.accordion-list .accordion-item__body p,
+.accordion-list .accordion-item__body ul {
+    max-width: 856px;
+    padding: 0
+}
+
+.accordion-list .accordion-item__body>div:not(.accordion-item__title):not(.note-decor) {
+    background-color: #f2f3ef;
+    border-radius: 10px;
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.7;
+    margin: 16px 0 8px;
+    padding: 16px 23px
+}
+
+.accordion-list .accordion-item__body>div:not(.accordion-item__title):not(.note-decor):last-child {
+    margin-bottom: 0
+}
+
+.accordion-list .accordion-item__body ul {
+    margin-bottom: 20px;
+    padding: 0
+}
+
+.accordion-list .accordion-item__body ul:last-child {
+    margin-bottom: 0
+}
+
+.accordion-list .accordion-item__body p {
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.7
+}
+
+.accordion-list .accordion-item__body p b {
+    font-weight: 700
+}
+
+.accordion-list .accordion-item__body .tooltip__trigger {
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums
+}
+
+.accordion-list .accordion-item__title {
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 18px;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    line-height: 1.7;
+    margin: 16px 0 8px
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/reviews-block.css?1772441887315*/
+.reviews-block {
+    margin: 50px 0
+}
+
+.reviews-block__title {
+    margin-bottom: 12px
+}
+
+.reviews-block__details {
+    margin-bottom: 28px
+}
+
+.reviews-block__items {
+    grid-gap: 36px;
+    gap: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:767px) {
+    .reviews-block__items {
+        grid-gap: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/review-item.css?17724418871678*/
+.review-item {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 32px 22px
+}
+
+.review-item__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.review-item__img {
+    border-radius: 50%;
+    height: 36px;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 36px
+}
+
+.review-item__wrap {
+    display: flex
+}
+
+.review-item__rating {
+    margin-bottom: 5px
+}
+
+.review-item__rating .rating {
+    justify-content: flex-start
+}
+
+.review-item__date,
+.review-item__name {
+    color: var(--color-text-base);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5
+}
+
+.review-item__name {
+    align-items: center;
+    display: flex;
+    margin-right: 7px;
+    text-decoration: none;
+    transition: color .3s
+}
+
+.review-item__date {
+    color: #8b8b8b
+}
+
+.review-item__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -.36px;
+    line-height: 1.2;
+    margin-bottom: 14px
+}
+
+.review-item__desc {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.8;
+    margin-bottom: 17px;
+    overflow: hidden
+}
+
+.review-item__desc,
+.review-item__more {
+    color: var(--color-text-base);
+    font-family: var(--font-second)
+}
+
+.review-item__more {
+    cursor: pointer;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 1.4rem;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500;
+    letter-spacing: -.28px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color .3s
+}
+
+.review-item__more:hover {
+    color: #00aa6c
+}
+
+.review-item__icon {
+    margin-bottom: -7px;
+    margin-right: -6px
+}
+
+.review-item__icon img {
+    width: 49px
+}
+
+.review-item__bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto
+}
+
+.review-item__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+/* End */
+/* /local/templates/angelino.travel/assets/css/intro.css?17724418874563 */
+/* /local/templates/angelino.travel/assets/css/subintro.css?1772441887745 */
+/* /local/templates/angelino.travel/assets/css/tripadvisor-pin.css?1772441887447 */
+/* /local/templates/angelino.travel/assets/css/img-holder.css?17724418871503 */
+/* /local/templates/angelino.travel/assets/css/wrapper-slider.css?17724418872234 */
+/* /local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957 */
+/* /local/templates/angelino.travel/assets/css/accordion-list.css?17724418874148 */
+/* /local/templates/angelino.travel/assets/css/reviews-block.css?1772441887315 */
+/* /local/templates/angelino.travel/assets/css/review-item.css?17724418871678 */

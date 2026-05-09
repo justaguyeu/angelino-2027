@@ -1,0 +1,686 @@
+/* Start:/local/templates/angelino.travel/assets/css/location.css?17724418871258*/
+.location {
+    margin: 40px 0
+}
+
+.location__item {
+    grid-gap: 51px;
+    gap: 51px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    position: relative
+}
+
+@media (max-width:991px) {
+    .location__item {
+        grid-gap: 20px;
+        gap: 20px
+    }
+}
+
+@media (max-width:767px) {
+    .location__item {
+        flex-direction: column;
+        margin: 0 auto 30px;
+        max-width: 420px
+    }
+}
+
+.location__item:last-child {
+    margin-bottom: 0
+}
+
+.location__item .location__map {
+    height: 230px;
+    max-width: 420px
+}
+
+.location__map {
+    background-color: var(--color-border);
+    border-radius: 10px;
+    height: 400px;
+    overflow: hidden;
+    width: 100%
+}
+
+@media (max-width:767px) {
+    .location__map {
+        height: 230px
+    }
+}
+
+.location__title {
+    grid-gap: 10px;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 27px
+}
+
+@media (max-width:767px) {
+    .location__title {
+        justify-content: center
+    }
+}
+
+.location__desc {
+    font-feature-settings: "salt" on;
+    line-height: 1.42
+}
+
+@media (max-width:767px) {
+    .location__desc {
+        text-align: center
+    }
+}
+
+.location__phone {
+    grid-gap: 9px;
+    gap: 9px;
+    display: flex;
+    font-feature-settings: "salt" on;
+    margin-top: 37px
+}
+
+@media (max-width:767px) {
+    .location__phone {
+        justify-content: center;
+        margin-top: 20px
+    }
+}
+
+.location__phone span {
+    font-weight: 500
+}
+
+.location__phone a {
+    color: var(--color-text-base);
+    text-decoration: none;
+    transition: color .3s
+}
+
+.location__phone a:hover {
+    color: var(--main-color-first)
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/requisites.css?1772441887182*/
+.requisites__text {
+    font-feature-settings: "salt" on;
+    line-height: 1.5;
+    margin-bottom: 17px
+}
+
+.requisites__text:last-child {
+    margin-bottom: 0
+}
+
+.requisites__text span:first-child {
+    font-weight: 600
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/special-cards.css?1772441887213*/
+.special-cards {
+    margin: 20px 0 40px
+}
+
+.special-cards__inner {
+    grid-gap: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:767px) {
+    .special-cards__inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/special-card.css?17724418871346*/
+.special-card {
+    background: var(--color-background);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, .06);
+    padding: 19px 30px
+}
+
+.special-card--last {
+    grid-column: span 2
+}
+
+@media (max-width:767px) {
+    .special-card--last {
+        grid-column: span 1
+    }
+}
+
+.special-card__head,
+.special-card__icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.special-card__icon {
+    flex-shrink: 0;
+    height: 39px;
+    justify-content: flex-start;
+    margin-right: 10px;
+    width: 39px
+}
+
+.special-card__title {
+    font-feature-settings: "salt" on;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.05
+}
+
+.special-card__desc {
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.5;
+    margin-top: 20px
+}
+
+.special-card__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 13px;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500
+}
+
+.special-card__reviews {
+    border-bottom: 1px solid #00aa6c;
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 14px;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500;
+    letter-spacing: -.28px;
+    line-height: 1.5;
+    text-decoration: none
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/youtube-block.css?1772441887538*/
+.youtube-block {
+    margin: 50px 0
+}
+
+.youtube-block__title {
+    margin-bottom: 45px
+}
+
+.youtube-block__title img {
+    height: 30px;
+    width: 30px
+}
+
+@media (max-width:767px) {
+    .youtube-block__title {
+        margin-bottom: 27px
+    }
+}
+
+.youtube-block__wrap.swiper-wrapper {
+    grid-gap: 23px;
+    gap: 23px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+@media (max-width:991px) {
+    .youtube-block__wrap.swiper-wrapper {
+        grid-gap: 0;
+        gap: 0;
+        display: flex;
+        padding-bottom: 30px
+    }
+
+    .youtube-block__wrap.swiper-wrapper .youtube-item {
+        margin: 0;
+        max-width: none
+    }
+}
+
+.youtube-block__bottom {
+    margin-top: 41px;
+    text-align: center
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/youtube-item.css?17724418871153*/
+.youtube-item {
+    text-decoration: none
+}
+
+@media (max-width:767px) {
+    .youtube-item {
+        margin: 0 auto;
+        max-width: 270px
+    }
+}
+
+.youtube-item:hover .youtube-item__name {
+    color: var(--main-color-first)
+}
+
+.youtube-item__img {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative
+}
+
+.youtube-item__img img {
+    display: block
+}
+
+@media (max-width:991px) {
+    .youtube-item__img img {
+        width: 100%
+    }
+}
+
+.youtube-item__img-icon {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@media (max-width:991px) {
+    .youtube-item__img-icon {
+        height: 34px;
+        width: 47px
+    }
+}
+
+.youtube-item__name {
+    color: #1e1e1e;
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    line-height: 15px;
+    margin-bottom: 5px;
+    transition: color .3s
+}
+
+.youtube-item__detail {
+    color: var(--color-text-base);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 14px;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.58
+}
+
+.youtube-item--single .youtube-item__img {
+    margin-bottom: 20px
+}
+
+.youtube-item--single .youtube-item__name {
+    font-size: 14px
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957*/
+.slider-pagination.swiper-pagination {
+    grid-gap: 5px;
+    gap: 5px;
+    bottom: 0 !important;
+    display: none;
+    justify-content: center
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet {
+    background-color: #d9d9d9;
+    height: 6px;
+    margin: 0 !important;
+    opacity: 1;
+    width: 6px
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-text-second)
+}
+
+.slider-arrow.swiper-button-next,
+.slider-arrow.swiper-button-prev {
+    right: 23px;
+    top: 47%
+}
+
+@media (max-width:991px) {
+
+    .slider-arrow.swiper-button-next,
+    .slider-arrow.swiper-button-prev {
+        display: none !important
+    }
+}
+
+.slider-arrow.swiper-button-next:after,
+.slider-arrow.swiper-button-prev:after {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/arrow-slider.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 16px;
+    width: 11px
+}
+
+.slider-arrow.swiper-button-prev {
+    left: 23px;
+    right: auto
+}
+
+.slider-arrow.swiper-button-prev:after {
+    transform: rotate(180deg)
+}
+
+.swiper-initialized .slider-pagination {
+    display: flex
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/instagram-block.css?17724418871310*/
+.instagram-block {
+    margin: 50px 0
+}
+
+.instagram-block__wrap {
+    margin: 0 auto;
+    max-width: 760px
+}
+
+.instagram-block--small {
+    border: none;
+    padding: 0
+}
+
+.instagram-block--small .instagram-block__inner {
+    grid-gap: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.instagram-block--small .instagram-block__btn {
+    padding: 10px
+}
+
+.instagram-block--small .instagram-block__btn img,
+.instagram-block--small .instagram-block__btn svg {
+    height: 16px;
+    width: 16px
+}
+
+.instagram-block--small .instagram-block__bottom {
+    margin-top: 15px
+}
+
+.instagram-block__title {
+    margin-bottom: 30px
+}
+
+@media (max-width:767px) {
+    .instagram-block__title {
+        margin-bottom: 16px
+    }
+}
+
+.instagram-block__inner {
+    grid-gap: 24px;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+@media (max-width:767px) {
+    .instagram-block__inner {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:539px) {
+    .instagram-block__inner {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+.instagram-block__item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s
+}
+
+@media (max-width:767px) {
+    .instagram-block__item:nth-child(1n+4) {
+        display: none
+    }
+}
+
+@media (max-width:539px) {
+    .instagram-block__item:nth-child(1n+4) {
+        display: none
+    }
+}
+
+.instagram-block__item:hover {
+    transform: scale(1.03)
+}
+
+.instagram-block__item img {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 100%
+}
+
+.instagram-block__bottom {
+    margin-top: 41px;
+    text-align: center
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/reviews-block.css?1772441887315*/
+.reviews-block {
+    margin: 50px 0
+}
+
+.reviews-block__title {
+    margin-bottom: 12px
+}
+
+.reviews-block__details {
+    margin-bottom: 28px
+}
+
+.reviews-block__items {
+    grid-gap: 36px;
+    gap: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:767px) {
+    .reviews-block__items {
+        grid-gap: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/review-item.css?17724418871678*/
+.review-item {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 32px 22px
+}
+
+.review-item__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.review-item__img {
+    border-radius: 50%;
+    height: 36px;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 36px
+}
+
+.review-item__wrap {
+    display: flex
+}
+
+.review-item__rating {
+    margin-bottom: 5px
+}
+
+.review-item__rating .rating {
+    justify-content: flex-start
+}
+
+.review-item__date,
+.review-item__name {
+    color: var(--color-text-base);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5
+}
+
+.review-item__name {
+    align-items: center;
+    display: flex;
+    margin-right: 7px;
+    text-decoration: none;
+    transition: color .3s
+}
+
+.review-item__date {
+    color: #8b8b8b
+}
+
+.review-item__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -.36px;
+    line-height: 1.2;
+    margin-bottom: 14px
+}
+
+.review-item__desc {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 1.8;
+    margin-bottom: 17px;
+    overflow: hidden
+}
+
+.review-item__desc,
+.review-item__more {
+    color: var(--color-text-base);
+    font-family: var(--font-second)
+}
+
+.review-item__more {
+    cursor: pointer;
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 1.4rem;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500;
+    letter-spacing: -.28px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color .3s
+}
+
+.review-item__more:hover {
+    color: #00aa6c
+}
+
+.review-item__icon {
+    margin-bottom: -7px;
+    margin-right: -6px
+}
+
+.review-item__icon img {
+    width: 49px
+}
+
+.review-item__bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto
+}
+
+.review-item__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+/* End */
+/* /local/templates/angelino.travel/assets/css/location.css?17724418871258 */
+/* /local/templates/angelino.travel/assets/css/requisites.css?1772441887182 */
+/* /local/templates/angelino.travel/assets/css/special-cards.css?1772441887213 */
+/* /local/templates/angelino.travel/assets/css/special-card.css?17724418871346 */
+/* /local/templates/angelino.travel/assets/css/youtube-block.css?1772441887538 */
+/* /local/templates/angelino.travel/assets/css/youtube-item.css?17724418871153 */
+/* /local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957 */
+/* /local/templates/angelino.travel/assets/css/instagram-block.css?17724418871310 */
+/* /local/templates/angelino.travel/assets/css/reviews-block.css?1772441887315 */
+/* /local/templates/angelino.travel/assets/css/review-item.css?17724418871678 */

@@ -1,0 +1,668 @@
+/* Start:/local/templates/angelino.travel/assets/css/wrapper-slider.css?17724418872234*/
+.wrapper-slider {
+    margin: 30px 0
+}
+
+.wrapper-slider .wrapper-slider__content {
+    grid-gap: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.wrapper-slider .wrapper-slider__content .detail-card {
+    width: calc(32% - 20px)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__content .detail-card {
+        width: calc(50% - 16px)
+    }
+}
+
+@media (max-width:640px) {
+    .wrapper-slider .wrapper-slider__content .detail-card {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider .wrapper-slider__content {
+        grid-gap: 16px;
+        gap: 16px
+    }
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper {
+    margin: 0 -10px;
+    padding: 0 10px 10px
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper .detail-card {
+    width: 100%
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__inner.swiper {
+        padding-bottom: 30px
+    }
+}
+
+.wrapper-slider .wrapper-slider__inner.swiper .wrapper-slider__content {
+    grid-gap: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider .wrapper-slider__inner.swiper .wrapper-slider__content {
+        grid-gap: 0;
+        gap: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: normal
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content {
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:991px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content {
+        grid-gap: 0;
+        gap: 0
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+    min-height: 217px
+}
+
+@media (max-width:1200px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+        min-height: 151px
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .article-holder__img {
+        min-height: auto
+    }
+}
+
+.wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+    min-height: 240px
+}
+
+@media (max-width:1200px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+        min-height: 261px
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-slider.wrapper-slider--double .wrapper-slider__inner.swiper .wrapper-slider__content .img-holder__img {
+        min-height: auto
+    }
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/article-card.css?17724418871721*/
+.article-card,
+.article-card.swiper-slide {
+    border-radius: 10px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .1);
+    overflow: hidden
+}
+
+.article-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    text-decoration: none
+}
+
+.article-card__link:hover .article-card__img {
+    transform: scale(1.1)
+}
+
+.article-card__link:before {
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .3));
+    bottom: 0;
+    content: "";
+    height: 100px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10
+}
+
+.article-card__img {
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform .3s;
+    width: 100%
+}
+
+.article-card__img img {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.article-card__hint {
+    background-color: var(--color-text-base);
+    border-radius: 0 5px 13px 0;
+    color: var(--color-background);
+    font-size: 1rem;
+    left: 0;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    padding: 8px 9px 7px 30px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px
+}
+
+.article-card__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 200px;
+    padding: 25px 30px;
+    position: relative
+}
+
+.article-card__title {
+    color: var(--color-background);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.07;
+    position: relative;
+    transition: color .3s;
+    z-index: 10
+}
+
+.article-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    position: relative;
+    z-index: 10
+}
+
+.article-card__detail {
+    grid-gap: 9px;
+    gap: 9px;
+    align-items: center;
+    color: var(--color-background);
+    display: flex;
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-size: 13px;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500
+}
+
+.article-card__detail:nth-child(2) {
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+    text-transform: uppercase
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957*/
+.slider-pagination.swiper-pagination {
+    grid-gap: 5px;
+    gap: 5px;
+    bottom: 0 !important;
+    display: none;
+    justify-content: center
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet {
+    background-color: #d9d9d9;
+    height: 6px;
+    margin: 0 !important;
+    opacity: 1;
+    width: 6px
+}
+
+.slider-pagination.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-text-second)
+}
+
+.slider-arrow.swiper-button-next,
+.slider-arrow.swiper-button-prev {
+    right: 23px;
+    top: 47%
+}
+
+@media (max-width:991px) {
+
+    .slider-arrow.swiper-button-next,
+    .slider-arrow.swiper-button-prev {
+        display: none !important
+    }
+}
+
+.slider-arrow.swiper-button-next:after,
+.slider-arrow.swiper-button-prev:after {
+    background-image: url(../../../../../../local/templates/angelino.travel/assets/images/arrow-slider.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 16px;
+    width: 11px
+}
+
+.slider-arrow.swiper-button-prev {
+    left: 23px;
+    right: auto
+}
+
+.slider-arrow.swiper-button-prev:after {
+    transform: rotate(180deg)
+}
+
+.swiper-initialized .slider-pagination {
+    display: flex
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/topics-list.css?17724418871048*/
+.topics-list {
+    margin: 70px 0
+}
+
+.topics-list .topics-list__inner {
+    grid-gap: 75px 64px;
+    gap: 75px 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (max-width:991px) {
+    .topics-list .topics-list__inner {
+        grid-gap: 30px;
+        gap: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .topics-list .topics-list__inner {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+.topics-list .topics-list__head {
+    grid-gap: 10px;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2rem;
+    margin-bottom: 26px;
+    padding: 0 0 13px;
+    text-align: left
+}
+
+.topics-list .topics-list__head:before {
+    content: none
+}
+
+.topics-list .topics-list__head img {
+    display: block;
+    margin-top: -4px
+}
+
+.topics-list .topics-list__roster {
+    margin: 0;
+    padding: 0 8px
+}
+
+.topics-list .topics-list__item {
+    grid-gap: 10px;
+    gap: 10px;
+    color: #677451;
+    margin-bottom: 15px
+}
+
+.topics-list .topics-list__item:before {
+    background-color: #677451
+}
+
+.topics-list .topics-list__item a {
+    border-bottom: 3px solid transparent;
+    color: #677451
+}
+
+.topics-list .topics-list__item a:hover {
+    border-bottom: 3px solid rgba(119, 176, 23, .5);
+    color: var(--color-text-base)
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/tl-card.css?17724418874364*/
+.tl-card,
+.tl-card.swiper-slide {
+    border-radius: 10px;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+    min-height: 392px;
+    overflow: hidden;
+    padding: 29px 35px 30px 28px;
+    position: relative;
+    text-decoration: none;
+    width: 100%
+}
+
+@media (max-width:991px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        max-width: calc(50% - 20px)
+    }
+}
+
+@media (max-width:640px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        max-width: 100%
+    }
+}
+
+.tl-card.hidden,
+.tl-card.swiper-slide.hidden {
+    display: none
+}
+
+.tl-card.swiper-slide.tl-card--short,
+.tl-card.tl-card--short {
+    justify-content: flex-end;
+    min-height: 230px;
+    min-width: 400px
+}
+
+.tl-card.swiper-slide.tl-card--short .tl-card__img,
+.tl-card.tl-card--short .tl-card__img {
+    height: 100%
+}
+
+@media (max-width:991px) {
+
+    .tl-card.swiper-slide.tl-card--short,
+    .tl-card.tl-card--short {
+        margin: 0 auto;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        min-width: 100%
+    }
+}
+
+@media (max-width:380px) {
+
+    .tl-card.swiper-slide.tl-card--short,
+    .tl-card.tl-card--short {
+        min-width: 0
+    }
+}
+
+@media (max-width:991px) {
+
+    .tl-card.swiper-slide,
+    .tl-card.swiper-slide.swiper-slide {
+        max-width: none
+    }
+}
+
+.tl-card.swiper-slide:hover .button-t,
+.tl-card:hover .button-t {
+    background-color: var(--color-background)
+}
+
+.tl-card.swiper-slide:hover .button-t span,
+.tl-card:hover .button-t span {
+    color: var(--color-text-base)
+}
+
+.tl-card.swiper-slide:hover .tl-card__img,
+.tl-card:hover .tl-card__img {
+    transform: scale(1.1)
+}
+
+@media (max-width:479px) {
+
+    .tl-card,
+    .tl-card.swiper-slide {
+        min-height: 384px;
+        padding: 20px 15px
+    }
+}
+
+.tl-card .tl-card__img,
+.tl-card.swiper-slide .tl-card__img {
+    display: flex;
+    height: 392px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform .3s;
+    width: 100%
+}
+
+.tl-card .tl-card__img picture,
+.tl-card.swiper-slide .tl-card__img picture {
+    width: 100%
+}
+
+.tl-card .tl-card__img img,
+.tl-card.swiper-slide .tl-card__img img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%
+}
+
+.tl-card .tl-card__title,
+.tl-card.swiper-slide .tl-card__title {
+    color: var(--color-background);
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.tl-card .tl-card__days,
+.tl-card.swiper-slide .tl-card__days {
+    grid-gap: 8px;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-background);
+    display: flex;
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+    font-size: 1.7rem;
+    line-height: 1
+}
+
+.tl-card .tl-card__bottom,
+.tl-card .tl-card__head,
+.tl-card.swiper-slide .tl-card__bottom,
+.tl-card.swiper-slide .tl-card__head {
+    position: relative
+}
+
+.tl-card .tl-card__bottom,
+.tl-card.swiper-slide .tl-card__bottom {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center
+}
+
+.tl-card .tl-card__price,
+.tl-card .tl-card__text,
+.tl-card.swiper-slide .tl-card__price,
+.tl-card.swiper-slide .tl-card__text {
+    color: var(--color-background);
+    font-family: var(--font-second);
+    font-feature-settings: "salt" on, lining-nums proportional-nums;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.2
+}
+
+@media (max-width:400px) {
+
+    .tl-card .tl-card__price,
+    .tl-card .tl-card__text,
+    .tl-card.swiper-slide .tl-card__price,
+    .tl-card.swiper-slide .tl-card__text {
+        font-size: 1.5rem
+    }
+}
+
+.tl-card .tl-card__text--medium,
+.tl-card.swiper-slide .tl-card__text--medium {
+    font-weight: 500
+}
+
+.tl-card .tl-card__price,
+.tl-card.swiper-slide .tl-card__price {
+    font-size: 2.7rem
+}
+
+@media (max-width:400px) {
+
+    .tl-card .tl-card__price,
+    .tl-card.swiper-slide .tl-card__price {
+        font-size: 2.2rem
+    }
+}
+
+.tl-card .tl-card__left .button-l,
+.tl-card.swiper-slide .tl-card__left .button-l {
+    min-width: 130px
+}
+
+.tl-card .tl-card__right .button-t,
+.tl-card.swiper-slide .tl-card__right .button-t {
+    min-width: 130px;
+    transition: background-color .3s
+}
+
+.tl-card .tl-card__right .button-t:hover,
+.tl-card.swiper-slide .tl-card__right .button-t:hover {
+    background: var(--color-background);
+    border-color: hsla(0, 0%, 100%, .7)
+}
+
+.tl-card .tl-card__body,
+.tl-card.swiper-slide .tl-card__body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+    text-align: center
+}
+
+.tl-card .tl-card__category,
+.tl-card.swiper-slide .tl-card__category {
+    color: var(--color-background);
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1
+}
+
+.tl-card .tl-card__count,
+.tl-card.swiper-slide .tl-card__count {
+    color: var(--color-background);
+    font-weight: 500
+}
+
+.tl-card .tl-card__btn,
+.tl-card.swiper-slide .tl-card__btn {
+    bottom: 10px;
+    min-width: 130px;
+    position: absolute
+}
+
+.tl-card .tl-card__btn .button-t,
+.tl-card.swiper-slide .tl-card__btn .button-t {
+    width: 100%
+}
+
+/* End */
+
+
+/* Start:/local/templates/angelino.travel/assets/css/tours-list.css?1772441887385*/
+.tours-list {
+    margin: 40px 0
+}
+
+.tours-list__swiper {
+    margin: 0 -10px;
+    padding: 10px
+}
+
+.tours-list__wrap {
+    grid-gap: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+@media (max-width:767px) {
+    .tours-list__wrap {
+        align-items: center
+    }
+}
+
+@media (max-width:991px) {
+    .tours-list__wrap.swiper-wrapper {
+        grid-gap: 0;
+        gap: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        padding: 10px 0 30px
+    }
+}
+
+/* End */
+/* /local/templates/angelino.travel/assets/css/wrapper-slider.css?17724418872234 */
+/* /local/templates/angelino.travel/assets/css/article-card.css?17724418871721 */
+/* /local/templates/angelino.travel/assets/css/slider-pagination.css?1772441887957 */
+/* /local/templates/angelino.travel/assets/css/topics-list.css?17724418871048 */
+/* /local/templates/angelino.travel/assets/css/tl-card.css?17724418874364 */
+/* /local/templates/angelino.travel/assets/css/tours-list.css?1772441887385 */
